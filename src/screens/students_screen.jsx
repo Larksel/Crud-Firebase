@@ -91,13 +91,13 @@ export default function StudentInfo() {
                     <tbody>
                       {Object.keys(studentObjects).map((key) => (
                         <tr key={key}>
-                          <td>{studentObjects[key].FullName}</td>
+                          <td>{studentObjects[key].name}</td>
 
-                          <td>{studentObjects[key].Course}</td>
+                          <td>{studentObjects[key].course}</td>
 
-                          <td>{studentObjects[key].Semester}</td>
+                          <td>{studentObjects[key].semester}</td>
 
-                          <td>{studentObjects[key].Period}</td>
+                          <td>{studentObjects[key].period}</td>
 
                           <td className="case-record">
                             <button
@@ -112,7 +112,6 @@ export default function StudentInfo() {
                           </td>
 
                           <td>
-                            {" "}
                             <button
                               type="button"
                               className="btn btn-danger"
